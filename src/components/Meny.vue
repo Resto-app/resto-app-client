@@ -10,24 +10,29 @@
             <div class="week-meny-list">
                 <ul>
                     <li>
-                        <h2>Måndag</h2>
-                        <p>> {{ this.meny.day.monday }}</p>
+                        <h4>Måndag</h4>
+                        <h2>{{ this.meny.day.monday.dish }}</h2>
+                        <p>> {{ this.meny.day.monday.dishDescription }}</p>
                     </li>
                     <li>
-                        <h2>Tisdag</h2>
-                        <p>{{ this.meny.day.tuesday }}</p>
+                        <h4>Tisdag</h4>
+                        <h2>{{ this.meny.day.tuesday.dish }}</h2>
+                        <p>{{ this.meny.day.tuesday.dishDescription }}</p>
                     </li>
                     <li>
-                        <h2>Onsdag</h2>
-                        <p>{{ this.meny.day.wednesday }}</p>
+                        <h4>Onsdag</h4>
+                        <h2>{{ this.meny.day.wednesday.dish }}</h2>
+                        <p>{{ this.meny.day.wednesday.dishDescription }}</p>
                     </li>
                     <li>
-                        <h2>Torsdag</h2>
-                        <p>{{ this.meny.day.thursday }}</p>
+                        <h4>Torsdag</h4>
+                        <h2>{{ this.meny.day.thursday.dish }}</h2>
+                        <p>{{ this.meny.day.thursday.dishDescription }}</p>
                     </li>
                     <li>
-                        <h2>Fredag</h2>
-                        <p>{{ this.meny.day.friday }}</p>
+                        <h4>Fredag</h4>
+                        <h2>{{ this.meny.day.friday.dish }}</h2>
+                        <p>{{ this.meny.day.friday.dishDescription }}</p>
                     </li>
                 </ul>
             </div>
@@ -47,11 +52,26 @@ export default {
         return {
             meny: {
                 day: {
-                monday: '',
-                tuesday: '',
-                wednesday: '',
-                thursday: '',
-                friday: ''
+                monday: {
+                    dish: '',
+                    dishDescription: ''
+                },
+                tuesday: {
+                    dish: '',
+                    dishDescription: ''
+                },
+                wednesday: {
+                    dish: '',
+                    dishDescription: ''
+                },
+                thursday: {
+                    dish: '',
+                    dishDescription: ''
+                },
+                friday: {
+                    dish: '',
+                    dishDescription: ''
+                },
             },
             price: '',
             extra: '',
@@ -88,11 +108,12 @@ export default {
     max-width: 100%;
     width: 600px;
     height: auto;
+    line-height: 1.5;
 }
 .week-meny-list ul li {
     background-color: #fcfaf4;
     color: #222;
-    padding: 1.5em 2em;
+    padding: 1em 2em;
     list-style: none;
     box-shadow: 0 10px 10px rgb(0 0 0 / 70%);
 }

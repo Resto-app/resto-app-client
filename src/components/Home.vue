@@ -1,7 +1,7 @@
 <template>
     <Header />
     <div class="hero-content">
-        <img alt="Moonlight Restaurang" src="../assets/img/header4.jpg" />
+        <img alt="ASIAN EXPRESS" src="../assets/img/header4.jpg" />
         <h1 class="welcome-message align-center">
             <span class="welcome-message__bold">Välkommen till </span>
             <span class="welcome-message__thin">ASIAN EXPRESS</span>
