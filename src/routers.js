@@ -1,25 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from './components/Home.vue'
-import Booking from './components/Booking.vue'
-import Meny from './components/Meny.vue'
+import HomeView from './components/HomeView.vue'
+import MenyView from './components/MenyView.vue'
 import ListRestaurants from './components/ListRestaurants.vue'
-
-// import Update from './components/Update.vue'
 
 const routes = [
   {
-    name: "Home",
-    component: Home,
+    name: "HomeView",
+    component: HomeView,
     path: "/",
   },
   {
-    name: "Booking",
-    component: Booking,
-    path: "/booking",
-  },
-  {
-    name: "Meny",
-    component: Meny,
+    name: "MenyView",
+    component: MenyView,
     path: "/meny",
   },
   {

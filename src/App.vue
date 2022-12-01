@@ -21,10 +21,9 @@ body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   background-color: #fff;
-  /* background-color: rgb(202, 192, 167); */
 }
 section {
-  padding-top: 4em;
+  padding: 4em 0;
 }
 h1 {
   display: block;

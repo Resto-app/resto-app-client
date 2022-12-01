@@ -16,7 +16,4 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 /* add icons to the library */
 library.add(faUser, faTrashCan, faPen, faAngleDown, faMagnifyingGlass)
 
-/* add font awesome icon component */
-//Vue.component('font-awesome-icon', FontAwesomeIcon)
-
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

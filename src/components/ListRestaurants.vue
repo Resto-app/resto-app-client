@@ -1,8 +1,8 @@
 <template>
-    <Header />
+    <HeaderView />
     <section>
       <div class="hero-content-locate-restaurant">
-        <img alt="Moonlight Restaurang" src="../assets/img/resto-1.jpg" />
+        <img alt="ASIAN EXPRESS" src="../assets/img/resto-1.jpg" />
       </div>
       <div class="search-restaurant-container">
         <h2>Hitta restaurang</h2>
@@ -20,8 +20,10 @@
                 <h3>{{ item.city }}</h3>
               </div>
               <div>
-                {{ item.street }} 
-                {{ item.streetNumber }}
+                <p>
+                  {{ item.street }}
+                  {{ item.streetNumber }}
+                </p>
               </div>
               <div>
                 <p>{{ item.email }}</p>
@@ -47,12 +49,12 @@
     </section>
 </template>
 <script>
-import Header from './Header.vue'
+import HeaderView from './HeaderView.vue'
 import axios from 'axios'
 export default {
     name: 'ListRestaurants',
     components: {
-        Header
+        HeaderView
     },
     data() {
         return {
@@ -121,13 +123,16 @@ export default {
 </script>
 <style>
 .search-restaurant-container {
-  padding: 2em 4em;
+  padding: 2em 0 2em 2em;
 }
 .search-restaurant-container h2 {
-  margin-bottom: 1em;
+  margin: 1em 0;
+  font-size: 2rem;
 }
 .list-content {
   padding-top: 3em;
+  height: 400px; 
+  overflow-x: auto;
 }
 .list-content ol {
   list-style: none;
@@ -137,11 +142,17 @@ export default {
   justify-content: space-between;
   margin-bottom: 1em;
 }
+.list-content ol li p{
+  font-size: 1.2rem;
+}
+.list-content ol li div{
+  width: 220px;
+}
 .search-form {
   width: 400px;
   height: 50px;
+  margin: 2em 0;
   position: relative;
-
   overflow: hidden;
 }
 .search-form svg {
