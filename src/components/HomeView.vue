@@ -36,7 +36,7 @@ export default {
 .welcome-message {
     width: 100%;
     position: absolute;
-    top: 25vh;
+    top: 20vh;
     margin-bottom: 0;
     padding: 1rem 0 calc(1rem + 20px);
     color: #fff;
@@ -64,7 +64,7 @@ export default {
     justify-content: center;
     width: 100%;
     position: absolute;
-    bottom: 8em;
+    bottom: 12em;
 }
 .hero-content .actions .button {
     width: 220px;
