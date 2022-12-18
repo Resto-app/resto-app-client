@@ -38,7 +38,6 @@ nav {
     display: inline-block;
     text-decoration: none;
 }
-
 .nav-links {
     display: flex;
     list-style: none;

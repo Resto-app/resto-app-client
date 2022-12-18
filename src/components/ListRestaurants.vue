@@ -82,7 +82,7 @@ export default {
           return restaurant.openingHour.friday
           if(day == 6)
           return restaurant.openingHour.saturday
-          if(day == 7)
+          if(day == 0)
           return restaurant.openingHour.sunday
         },
         getClosingHour(restaurant) {
@@ -100,7 +100,7 @@ export default {
           return restaurant.closingHour.friday
           if(day == 6)
           return restaurant.closingHour.saturday
-          if(day == 7)
+          if(day == 0)
           return restaurant.closingHour.sunday
         },
         async loadData() {
@@ -172,7 +172,6 @@ export default {
     border-radius: 5px;
     padding: 0 5px 0 40px;
     border: none;
-    /* border: 1px solid #b3b3b3; */
 }
 .search-form label{
     position: absolute;

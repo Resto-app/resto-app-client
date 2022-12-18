@@ -13,7 +13,6 @@
         </div>
     </section>
 </template>
-
 <script>
 import HeaderView from './HeaderView.vue'
 export default {
